@@ -23,10 +23,7 @@ The goal is to classify patents as relevant or irrelevant based on their technic
 The progression from Approach 1 to Approach 4 highlights the value of domain-adapted models and robust evaluation. Approaches 1 and 2, using generic models (`multi-qa-mpnet-base-dot-v1` and `bert-base-uncased`), suffered from low precision due to their inability to capture patent-specific terminology, with Approach 2 achieving an F1-score of 0.15. Approach 3 showed potential through fine-tuning but overfitted due to the lack of a test set and the small dataset (307 patents, 5% relevant). Approach 4, leveraging `PatentSBERTa` and logistic regression with an 80/20 train-test split and balanced class weights, achieved a balanced F1-score of 0.57 (precision=0.50, recall=0.67).
 
 - **Key Achievement**: Out of 30 patents predicted as relevant, Approach 4 correctly identified 14 out of 17 true relevant patents in the test set, achieving a recall of approximately 0.82 for this subset. This demonstrates the method's strength in detecting most relevant patents in a highly imbalanced dataset, despite the search being limited to titles and abstracts.
-- **Comparison**:
-  - Outperforms traditional methods like TF-IDF with SVM (F1=0.30–0.40).
-  - Approaches state-of-the-art domain-specific models (F1=0.65) with a smaller dataset (307 patents vs. >1000).
-  - Narrows the gap with human expert performance (F1=0.70–0.80).
+
 - **Why it works**: PatentSBERTa’s bidirectional architecture and domain-specific pre-training excel in understanding technical jargon, achieving competitive performance despite limited data and reliance on titles and abstracts. Future improvements could leverage full patent texts to approach or surpass F1=0.65.
 
 ## Requirements

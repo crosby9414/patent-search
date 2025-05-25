@@ -13,26 +13,15 @@ Results
 
 
 
-Approach
-Model
-Precision
-Recall
-F1-Score
+Approach       Approach 2                                 Approach 4
+Model          Generic BERT + Cosine Similarity           PatentSBERTa + Logistic Regression
+Precision       0.08                                      0.50
+Recall          0.93                                      0.67
+F1-Score        0.15                                      0.57
 
 
 
-Approach 2
-Generic BERT + Cosine Similarity
-0.08
-0.93
-0.15
 
-
-Approach 4
-PatentSBERTa + Logistic Regression
-0.50
-0.67
-0.57
 
 
 
@@ -147,7 +136,7 @@ Use The Lens or OPS for abstracts, as manual copying is impractical for large da
 
 Notes
 
-The dataset (307 patents, 5% relevant) is not included due to proprietary restrictions. Prepare a similar CSV with titles, abstracts, and labels.
+The dataset (307 patents, 5% relevant) is included for testing. Preparing a similar CSV with titles, abstracts, and labels is also possible and desirable.
 Ensure compliance with EPO’s Fair Use Policy when using OPS API.
 For large datasets, consider batch processing to handle API limits.
 

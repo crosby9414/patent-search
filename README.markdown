@@ -126,8 +126,6 @@ patent-search/
 └── README.md                # This file
 ```
 
-## Notes
-- The dataset (307 patents, 5% relevant) is not included due to proprietary restrictions. A synthetic example is provided in `data/example_patents.csv`.
 - Ensure compliance with EPO’s Fair Use Policy when using OPS API.
 - For large datasets, consider batch processing to handle API limits.
 

@@ -114,17 +114,8 @@ To obtain patent data with titles and abstracts for classification:
    - Espacenet’s CSV export includes titles but not abstracts.
    - Use The Lens or OPS for abstracts, as manual copying is impractical for large datasets.
 
-## Repository Structure
 
-```
-patent-search/
-├── .gitignore               # Ignored files
-├── patent_search.py         # Main script for classification
-├── requirements.txt         # Dependencies
-├── data/                    # Dataset (e.g., example_patents.csv, prepare your own)
-├── results/                 # Output directory (metrics, models)
-└── README.md                # This file
-```
+
 
 - Ensure compliance with EPO’s Fair Use Policy when using OPS API.
 - For large datasets, consider batch processing to handle API limits.
